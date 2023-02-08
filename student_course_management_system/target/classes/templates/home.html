@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+</head>
+<body>
+   <h1>Student Data</h1>
+   <h2 th:text= "${msg}"></h2>
+   
+   <form action="addStudent" method ="POST">
+      
+      <h3>Enter Student Name:</h3>
+      <input type ="text" name = "sName"></input>
+      
+      <h3>Enter Student AdmissionYear:</h3>
+      <input type ="date" name = "sAdYear"></input>
+      
+      <h3>Enter Student Address:</h3>
+      <input type ="text" name = "sAddress"></input>
+      
+      <h3>Enter Student Phone:</h3>
+      <input type ="text" name= "sPhone"></input>
+      
+      <h3>Enter Student Email:</h3>
+      <input type ="email" name = "sEmail"></input>
+      
+      <h3>Enter Student Course Name:</h3>
+      <input type ="text" name = "sCourse"></input>
+      
+      <button type ="submit">Add Student Info</button>
+          
+   </form>
+   
+   <hr/>
+   <form action="finfById" method ="POST">
+      
+      <h3>Enter Student's ID:</h3>
+      <input type ="text" name = "sId"></input>
+       
+      <button type ="submit">Find By ID</button>
+          
+   </form>
+   
+    <hr/>
+   <form action="finfByCourse" method ="POST">
+      
+      <h3>Enter Student's Course:</h3>
+      <input type ="text" name = "sCourse"></input>
+       
+      <button type ="submit">Find By Student Course</button>
+          
+   </form>
+   
+    <hr/>
+   <form action="delectStudent" method ="GET">
+      
+      <h3>Enter Student's ID:</h3>
+      <input type ="text" name = "sId"></input>
+       
+      <button type ="submit">Delete</button>
+          
+   </form>
+   
+   <hr/>
+   <form action="updateStudent" method ="POST">
+      <h3>Enter Student's ID:</h3>
+      <input type ="text" name = "sId"></input>
+      
+      <h3>Enter Student Name:</h3>
+      <input type ="text" name = "sName"></input>
+      
+      <h3>Enter Student AdmissionYear:</h3>
+      <input type ="date" name = "sAdYear"></input>
+      
+      <h3>Enter Student Address:</h3>
+      <input type ="text" name = "sAddress"></input>
+      
+      <h3>Enter Student Phone:</h3>
+      <input type ="text" name= "sPhone"></input>
+      
+      <h3>Enter Student Email:</h3>
+      <input type ="email" name = "sEmail"></input>
+      <h3>Enter Student Course Name:</h3>
+      <input type ="text" name = "sCourse"></input>
+      
+      <button type ="submit">Update Student Info</button>
+          
+   </form>
+</body>
+</html>
